@@ -45,8 +45,10 @@ $(document).ready(function(){
 		$('li.smooth-menu a').bind("click", function(event) {
 			event.preventDefault();
 			var anchor = $(this);
+			const navbar = document.querySelector('.navbar');
+			const navbarHeight = navbar ? navbar.offsetHeight : 0; // Get the navbar height
 			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 0
+				scrollTop: $(anchor.attr('href')).offset().top - navbarHeight - 0
 			}, 1200,'easeInOutExpo');
 		});
 		

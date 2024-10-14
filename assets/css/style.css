@@ -191,10 +191,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #F65835;}
     justify-content: center;
     position:relative;
     background:url(../images/welcome-banner.png)no-repeat;
-    background-size: 70vw;
+    background-size: 100vh;
     background-position-x: center;
-    background-position-y: center;
-    height:890px;
+    background-position-y: 20vh;
+    height:100vh;
 }
 .welcome-hero:before{
     position:absolute;
@@ -368,6 +368,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.architecture-horizontal-timeline*/
 
 /*-------------------------------------
+        5-5.  Definitions
+--------------------------------------*/
+
+.definitions {
+    padding: 50px 0 100px;
+    border-top: 1px solid #e5ebf2;
+}
+
+/*-------------------------------------
         6.  Skills
 --------------------------------------*/
 .skills {
@@ -478,6 +487,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .main-timeline .timeline{
     position: relative;
+}
+
+.timeline-content {
+    margin-bottom: 10px;
 }
 
 .timeline-content span>i, .user-stories-time span>i {
