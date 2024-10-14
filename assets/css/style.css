@@ -79,7 +79,7 @@ ul li {
 	
 }
 select,input,textarea,button{box-shadow:none;outline:0!important;}
-button {background: transparent;border: 0;}
+/* button {background: transparent;border: 0;} */
 
 html,body{
     height: 100%;
@@ -102,7 +102,7 @@ html,body{
 --------------------------------------*/
 .top-area {
     position: relative;
-    z-index: 9999;
+    z-index: 9990;
 }
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
