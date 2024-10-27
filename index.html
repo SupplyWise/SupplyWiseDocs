@@ -432,16 +432,29 @@
 				{
 					id: 2,
 					date: "28-10-2024",
-					points: null,
+					points: 15,
 					roles: {
 						productOwner: "Maria Sardinha",
 						scrumMaster: "Miguel Miragaia",
 					},
-					summary: null,
-					issues: null,
-					retrospective: null,
+					summary: `In Sprint 2, we progressed significantly in the management platform's frontend design and backend development.<br>
+							The team successfully implemented functionality for franchise and restaurant creation, both on the frontend and backend, establishing a solid connection between them.<br>
+							Additionally, we addressed some authentication and security concerns, refining access to various endpoints and ensuring a more secure login functionality.<br>
+							Backend testing procedures were introduced and the SonarCloud setup now provides ongoing code quality checks and insights.
+							Frontend testing procedures were also introduced, using the LightHouse tool to ensure the platform's performance and accessibility.<br>
+							`, 
+					issues: `Features related to stock management were not completed and will be prioritized in the next sprint. <br>
+							We also faced some coding style divergences between the team members, which will be addressed in the next sprint.`,
+					retrospective: `The team is generally satisfied with the sprint's achievements and the 15 story points developed.
+									We feel well-prepared to continue the development of critical functionalities in Sprint 3.`,
 					tasks: [
-						{ title: "TBD", description: "Working on it!" },
+						{ title: "setup sonarcloud", description: "Configured SonarCloud for ongoing code quality checks." },
+						{ title: "SUP-8 simple user login" , description: "Use the credentials to access the management platform.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-8" },
+						{ title: "SUP-19 user change password", description: "Allow users to change their password on account settings.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-19" },
+						{ title: "design dashboard", description: "Designed the dashboard layout and components" },
+						{ title: "SUP-53 create company", description: "A disassociated user is able to create his company in the platform, to manage his restaurants.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-53" },
+						{ title: "SUP-51 create restaurant - first restaurant", description: "A disassociated user can add his first restaurant to associate to the company created previously", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-51" },
+						{ title: "SUP-54 create restaurant - other restaurant", description: "A franchise owner can add restaurants to his company", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-54" },
 					]
 				},
 				{
