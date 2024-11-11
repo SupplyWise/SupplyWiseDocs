@@ -122,7 +122,7 @@
 			<div class="section-heading text-center">
 				<h2>Architecture</h2>
 			</div>
-			<div class="container text-center">
+			<div class="container text-center" style="margin-top: 50px; padding-bottom: 50px;">
 				<div class="row">
 					<div class="col-md-12"></div>
 						<img src="assets/images/ES-Architecture.drawio.png" alt="Architecture"/>	
@@ -161,8 +161,8 @@
 									<h5 class="mb-1">Definition of Done</h5>
 								</div>								
 								<li class="list-group-item">Developed</li>
-								<li class="list-group-item">Tested</li>
-								<li class="list-group-item">Documented</li>
+								<li class="list-group-item">Tested (Sonarcloud, Lighthouse)</li>
+								<li class="list-group-item">Documented (SwaggerUI)</li>
 								<li class="list-group-item">Compliant with Acceptance Criteria</li>
 								<li class="list-group-item">Peer reviewed and approved by the Product Owner</li>
 								<li class="list-group-item">Merged into central branch ("develop")</li>
@@ -183,8 +183,10 @@
 			<div class="container">
 				<div class="user-stories-content">
 					<div class="row" style="margin-bottom: 35px;">
-						<div class="col-12 text-center">
-							<i>Click "Sprint Review" for more details</i>
+						<div class="col-12 text-center ">
+							<i style="margin-bottom: 5px;">Click "Sprint Review" for more details</i><br>
+							<span class="badge text-center" style="width: 25px; height: 18px; background-color: #F65835;"> </span> - User Story
+							<span class="badge text-center" style="margin-left: 10px; width: 25px; height: 18px; background-color: #6A708E;"> </span> - Task
 						</div>
 					</div>
 					<div class="main-timeline">
@@ -405,7 +407,6 @@
 				{
 					id: 1,
 					date: "14-10-2024",
-					points: 0,
 					roles: {
 						productOwner: "Alexandre Ribeiro",
 						scrumMaster: "Miguel Pinto",
@@ -426,13 +427,12 @@
 						{ title: "initial data model", description: "Designed the initial data model using a relational database approach." },
 						{ title: "web interface", description: "Started development of the web interface and initial pages." },
 						{ title: "api", description: "Created API endpoints focusing on login and registration." },
-						{ title: "SUP-8 Simple User Login", description: "Started working on the simple user login feature, but it was not completed.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-8" },
+						{ title: "SUP-8 Simple User Login", points: 0, description: "Started working on the simple user login feature, but it was not completed.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-8" },
 					]
 				},
 				{
 					id: 2,
 					date: "28-10-2024",
-					points: 15,
 					roles: {
 						productOwner: "Maria Sardinha",
 						scrumMaster: "Miguel Miragaia",
@@ -448,19 +448,18 @@
 					retrospective: `The team is generally satisfied with the sprint's achievements and the 15 story points developed.
 									We feel well-prepared to continue the development of critical functionalities in Sprint 3.`,
 					tasks: [
-						{ title: "setup sonarcloud", description: "Configured SonarCloud for ongoing code quality checks." },
-						{ title: "SUP-8 simple user login" , description: "Use the credentials to access the management platform.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-8" },
-						{ title: "SUP-19 user change password", description: "Allow users to change their password on account settings.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-19" },
-						{ title: "design dashboard", description: "Designed the dashboard layout and components" },
-						{ title: "SUP-53 create company", description: "A disassociated user is able to create his company in the platform, to manage his restaurants.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-53" },
-						{ title: "SUP-51 create restaurant - first restaurant", description: "A disassociated user can add his first restaurant to associate to the company created previously", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-51" },
-						{ title: "SUP-54 create restaurant - other restaurant", description: "A franchise owner can add restaurants to his company", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-54" },
+						{ title: "SUP-8 simple user login", points: 3, description: "Use the credentials to access the management platform.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-8" },
+						{ title: "SUP-19 user change password", points: 1, description: "Allow users to change their password on account settings.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-19" },
+						{ title: "SUP-53 create company", points: 3, description: "A disassociated user is able to create his company in the platform, to manage his restaurants.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-53" },
+						{ title: "SUP-51 create restaurant - first restaurant", points: 3, description: "A disassociated user can add his first restaurant to associate to the company created previously", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-51" },
+						{ title: "SUP-54 create restaurant - other restaurant", points: 1, description: "A franchise owner can add restaurants to his company", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-54" },
+						{ title: "design dashboard", points: 1, description: "Designed the dashboard layout and components." },
+						{ title: "setup sonarcloud", points: 1, description: "Configured SonarCloud for ongoing code quality checks." },
 					]
 				},
 				{
 					id: 3,
 					date: "11-11-2024",
-					points: 15,
 					roles: {
 						productOwner: "Guilherme Amorim",
 						scrumMaster: "Alexandre Ribeiro",
@@ -470,22 +469,25 @@
 							We also explored different AWS services for deployment and updated the architecture diagram to reflect	 the new services. <br>
 							We created an AWS account and started exploring the Terraform tool to automate the deployment process.`,
 					issues: `In the past two weeks we had other deliverables that took priority over the sprint tasks, so we were unable to complete the planned work. <br>
+							These deliverables included the IAP, an 8 page two-column report (+code), a website mockup, a test and other smaller tasks. <br>
 							There were also some doubts about what AWS services to use for deployment, which delayed the actual deployment of the platform. (to be addressed with the professors)`,
 					retrospective: `This was a tough sprint, but we learned a lot about AWS services which will be useful in the future. <br>
-							Overall, we are not satisfied with the progress made, but we are confident that we will be able to catch up in the next sprint.`,
+							Overall, we are not satisfied with the progress made, but we are confident that we will be able to catch up in the next sprint. <br>
+							We'll focus on completing the tasks that were not finished in this sprint and start working on higher account management functionalities, introducing the new manager master role, responsible for a particular restaurant's custom settings and employee management. <br>
+							We will also start working on the AWS deployment, using the knowledge acquired in this sprint.
+							`,
 					tasks: [
-						{ title: "SUP-72 add items", description: "Allow users to add items to their inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-72" },
-						{ title: "SUP-13 view inventory stock", description: "Show inventory items to the user.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-13" },
-						{ title: "SUP-73 inventory modelation", description: "Allow for the creation and closing of the inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-73" },
-						{ title: "SUP-74 item modelation", description: "View item information in the inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-74" },
-						{ title: "explore aws deployment", description: "Explore AWS services and decide what are the best technologies to use in our deployment." },
-						{ title: "update architecture/deployment diagram", description: "Update the architecture diagram to reflect the AWS cloud deployment structure." },
-					]
+						{ title: "SUP-72 add items", points: 3, description: "Allow users to add items to their inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-72" },
+						{ title: "SUP-13 view inventory stock", points: 2, description: "Show inventory items to the user.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-13" },
+						{ title: "SUP-73 inventory modelation", points: 3,description: "Allow for the creation and closing of the inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-73" },
+						{ title: "SUP-74 item modelation", points: 3, description: "View item information in the inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-74" },
+						{ title: "explore aws deployment", points: 2, description: "Explore AWS services and decide what are the best technologies to use in our deployment." },
+						{ title: "update architecture/deployment diagram", points: 2, description: "Update the architecture diagram to reflect the AWS cloud deployment structure." },
+					], 
 				},
 				{
 					id: 4,
 					date: "25-11-2024",
-					points: null,
 					roles: {
 						productOwner: "Miguel Pinto",
 						scrumMaster: "Maria Sardinha",
@@ -500,7 +502,6 @@
 				{
 					id: 5,
 					date: "09-12-2024",
-					points: null,
 					roles: {
 						productOwner: "Miguel Miragaia",
 						scrumMaster: "Guilherme Amorim",
@@ -529,15 +530,16 @@
 											Sprint Review #${sprint.id}
 										</button>
 										<h3>${sprint.date}</h3>
-										<h3>${sprint.points} points</h3>
+										<h3>${sprint.tasks.reduce((sum, task) => sum + (task.points || 0), 0)} points</h3>
 									</div>
 								</div>
 								<div class="col-md-offset-1 col-md-5">
 									<div class="timeline">
 										${sprint.tasks.map(task => `
 											<div class="timeline-content">
-												<h4 class="title">
+												<h4 class="title" style="display: flex; align-items: center;">
 													<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+													${task.points ? `<span class="badge text-center" style="width: 25px; margin-right: 10px; background-color: ${task.title.startsWith('SUP-') ? '#F65835' : 'rgb(106, 112, 142)'}">${task.points}</span>` : ''}
 													${
 														task.link ? 
 														`<a href="${task.link}"><b>${task.title}</b></a>` :
@@ -582,7 +584,7 @@
 											</div>
 											<div class="col-md-2 text-center role">
 												<p><strong>${sprint.date}</strong></p>
-												<p>${sprint.points} points</p>
+												<p>${sprint.tasks.reduce((sum, task) => sum + (task.points || 0), 0)} points</p>
 											</div>
 											<div class="col-md-3 role text-right">
 												<div class="role-content" style="right:0">
