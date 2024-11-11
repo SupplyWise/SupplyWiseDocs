@@ -460,16 +460,26 @@
 				{
 					id: 3,
 					date: "11-11-2024",
-					points: null,
+					points: 15,
 					roles: {
 						productOwner: "Guilherme Amorim",
 						scrumMaster: "Alexandre Ribeiro",
 					},
-					summary: null,
-					issues: null,
-					retrospective: null,
+					summary: `In Sprint 3, we started developing the inventory management functionalities, focusing on stock management and product creation. <br>
+							The team successfully implemented the inventory and item modelation, allowing users to start and close an inventory and add items to it. <br>
+							We also explored different AWS services for deployment and updated the architecture diagram to reflect	 the new services. <br>
+							We created an AWS account and started exploring the Terraform tool to automate the deployment process.`,
+					issues: `In the past two weeks we had other deliverables that took priority over the sprint tasks, so we were unable to complete the planned work. <br>
+							There were also some doubts about what AWS services to use for deployment, which delayed the actual deployment of the platform. (to be addressed with the professors)`,
+					retrospective: `This was a tough sprint, but we learned a lot about AWS services which will be useful in the future. <br>
+							Overall, we are not satisfied with the progress made, but we are confident that we will be able to catch up in the next sprint.`,
 					tasks: [
-						{ title: "TBD", description: "Working on it!" },
+						{ title: "SUP-72 add items", description: "Allow users to add items to their inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-72" },
+						{ title: "SUP-13 view inventory stock", description: "Show inventory items to the user.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-13" },
+						{ title: "SUP-73 inventory modelation", description: "Allow for the creation and closing of the inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-73" },
+						{ title: "SUP-74 item modelation", description: "View item information in the inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-74" },
+						{ title: "explore aws deployment", description: "Explore AWS services and decide what are the best technologies to use in our deployment." },
+						{ title: "update architecture/deployment diagram", description: "Update the architecture diagram to reflect the AWS cloud deployment structure." },
 					]
 				},
 				{
