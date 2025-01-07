@@ -427,7 +427,7 @@
 						{ title: "initial data model", description: "Designed the initial data model using a relational database approach." },
 						{ title: "web interface", description: "Started development of the web interface and initial pages." },
 						{ title: "api", description: "Created API endpoints focusing on login and registration." },
-						{ title: "SUP-8 Simple User Login", points: 0, description: "Started working on the simple user login feature, but it was not completed.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-8" },
+						{ title: "SUP-8 Simple User Login", points: 0, description: "Started working on the simple user login feature, but it was not completed.", link:"https://supplywise.atlassian.net/browse/SUP-8" },
 					]
 				},
 				{
@@ -448,13 +448,13 @@
 					retrospective: `The team is generally satisfied with the sprint's achievements and the 15 story points developed.
 									We feel well-prepared to continue the development of critical functionalities in Sprint 3.`,
 					tasks: [
-						{ title: "SUP-8 simple user login", points: 3, description: "Use the credentials to access the management platform.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-8" },
-						{ title: "SUP-19 user change password", points: 1, description: "Allow users to change their password on account settings.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-19" },
-						{ title: "SUP-53 create company", points: 3, description: "A disassociated user is able to create his company in the platform, to manage his restaurants.", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-53" },
-						{ title: "SUP-51 create restaurant - first restaurant", points: 3, description: "A disassociated user can add his first restaurant to associate to the company created previously", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-51" },
-						{ title: "SUP-54 create restaurant - other restaurant", points: 1, description: "A franchise owner can add restaurants to his company", link:"https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-54" },
-						{ title: "design dashboard", points: 1, description: "Designed the dashboard layout and components." },
-						{ title: "setup sonarcloud", points: 1, description: "Configured SonarCloud for ongoing code quality checks." },
+						{ title: "SUP-8 simple user login", points: 3, description: "Use the credentials to access the management platform.", link:"https://supplywise.atlassian.net/browse/SUP-8" },
+						{ title: "SUP-19 user change password", points: 1, description: "Allow users to change their password on account settings.", link:"https://supplywise.atlassian.net/browse/SUP-19" },
+						{ title: "SUP-53 create company", points: 3, description: "A disassociated user is able to create his company in the platform, to manage his restaurants.", link:"https://supplywise.atlassian.net/browse/SUP-53" },
+						{ title: "SUP-51 create restaurant - first restaurant", points: 3, description: "A disassociated user can add his first restaurant to associate to the company created previously", link:"https://supplywise.atlassian.net/browse/SUP-51" },
+						{ title: "SUP-54 create restaurant - other restaurant", points: 1, description: "A franchise owner can add restaurants to his company", link:"https://supplywise.atlassian.net/browse/SUP-54" },
+						{ title: "design dashboard", points: 1, description: "Designed the dashboard layout and components.", link:"https://supplywise.atlassian.net/browse/SUP-70" },
+						{ title: "setup sonarcloud", points: 1, description: "Configured SonarCloud for ongoing code quality checks.", link:"https://supplywise.atlassian.net/browse/SUP-71" },
 					]
 				},
 				{
@@ -477,12 +477,12 @@
 							We will also start working on the AWS deployment, using the knowledge acquired in this sprint.
 							`,
 					tasks: [
-						{ title: "SUP-72 add items", points: 3, description: "Allow users to add items to their inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-72" },
-						{ title: "SUP-13 view inventory stock", points: 2, description: "Show inventory items to the user.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-13" },
-						{ title: "SUP-73 inventory modelation", points: 3,description: "Allow for the creation and closing of the inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-73" },
-						{ title: "SUP-74 item modelation", points: 3, description: "View item information in the inventory.", link: "https://supplywise.atlassian.net/jira/software/projects/SUP/boards/2/backlog?selectedIssue=SUP-74" },
-						{ title: "explore aws deployment", points: 2, description: "Explore AWS services and decide what are the best technologies to use in our deployment." },
-						{ title: "update architecture/deployment diagram", points: 2, description: "Update the architecture diagram to reflect the AWS cloud deployment structure." },
+						{ title: "SUP-72 add items", points: 3, description: "Allow users to add items to their inventory.", link: "https://supplywise.atlassian.net/browse/SUP-72" },
+						{ title: "SUP-13 view inventory stock", points: 2, description: "Show inventory items to the user.", link: "https://supplywise.atlassian.net/browse/SUP-13" },
+						{ title: "SUP-73 inventory modelation", points: 3,description: "Allow for the creation and closing of the inventory.", link: "https://supplywise.atlassian.net/browse/SUP-73" },
+						{ title: "SUP-74 item modelation", points: 3, description: "View item information in the inventory.", link: "https://supplywise.atlassian.net/browse/SUP-74" },
+						{ title: "explore aws deployment", points: 2, description: "Explore AWS services and decide what are the best technologies to use in our deployment.", link:"https://supplywise.atlassian.net/browse/SUP-75" },
+						{ title: "update architecture/deployment diagram", points: 2, description: "Update the architecture diagram to reflect the AWS cloud deployment structure.", link:"https://supplywise.atlassian.net/browse/SUP-76" },
 					], 
 				},
 				{
@@ -542,7 +542,7 @@
 													${task.points ? `<span class="badge text-center" style="width: 25px; margin-right: 10px; background-color: ${task.title.startsWith('SUP-') ? '#F65835' : 'rgb(106, 112, 142)'}">${task.points}</span>` : ''}
 													${
 														task.link ? 
-														`<a href="${task.link}"><b>${task.title}</b></a>` :
+														`<a target="blank_" href="${task.link}"><b>${task.title}</b></a>` :
 														`${task.title}`
 													}
 												</h4>
