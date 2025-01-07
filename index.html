@@ -506,11 +506,17 @@
 						productOwner: "Miguel Miragaia",
 						scrumMaster: "Guilherme Amorim",
 					},
-					summary: null,
+					summary: `For this sprint, we decided to tackle three key tasks. <br>
+							First, we implemented the ability to set minimum stock quantities for inventory items, that had been delayed from the previous sprints. <br>
+							We also worked on refactoring the items model to align different perspectives within the team. <br>
+							Finally, we took on the challenge of implementing IDP authentication - the first microservice in our architecture`,
 					issues: null,
-					retrospective: null,
+					retrospective: `The refactoring of the items model turned out to be an important step. Each team member initially had a different perspective on how it should be structured, and this refactor helped us align our approach, making future development much smoother. <br>
+								When it comes to IDP authentication, it was our first microservice, and it took a considerable amount of time and effort. It was, without a doubt, the most challenging part of this sprint. However, now that we've gone through the toughest implementation, the foundation is set and building the remaining microservices should feel much more natural and efficient`,
 					tasks: [
-						{ title: "TBD", description: "Working on it!" },
+						{ title: "SUP-15 Set Minimum Stock Quantities", points: 1, description: "A manager master should be able to set minimum stock quantities for each inventory item", link: "https://supplywise.atlassian.net/browse/SUP-15" },
+						{ title: "SUP-50 IDP Authentication", points: 8, description: "Implementing IDP Authentication", link: "https://supplywise.atlassian.net/browse/SUP-50" },
+						{ title: "Items Modelation", points: 2, description: "Refactoring the items modelation", link: "https://supplywise.atlassian.net/browse/SUP-77" },
 					]
 				},
 			];
