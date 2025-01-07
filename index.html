@@ -187,6 +187,7 @@
 							<i style="margin-bottom: 5px;">Click "Sprint Review" for more details</i><br>
 							<span class="badge text-center" style="width: 25px; height: 18px; background-color: #F65835;"> </span> - User Story
 							<span class="badge text-center" style="margin-left: 10px; width: 25px; height: 18px; background-color: #6A708E;"> </span> - Task
+							<span class="badge text-center" style="margin-left: 10px; width: 25px; height: 18px; background-color: #ff1616;"> </span> - Bug/Problem
 						</div>
 					</div>
 					<div class="main-timeline">
@@ -516,7 +517,7 @@
 					tasks: [
 						{ title: "SUP-15 Set Minimum Stock Quantities", points: 1, description: "A manager master should be able to set minimum stock quantities for each inventory item", link: "https://supplywise.atlassian.net/browse/SUP-15" },
 						{ title: "SUP-50 IDP Authentication", points: 8, description: "Implementing IDP Authentication", link: "https://supplywise.atlassian.net/browse/SUP-50" },
-						{ title: "Items Modelation", points: 2, description: "Refactoring the items modelation", link: "https://supplywise.atlassian.net/browse/SUP-77" },
+						{ title: "BUG - Items Modelation", points: 2, description: "Refactoring the items modelation", link: "https://supplywise.atlassian.net/browse/SUP-77" },
 					]
 				},
 			];
@@ -545,7 +546,7 @@
 											<div class="timeline-content">
 												<h4 class="title" style="display: flex; align-items: center;">
 													<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-													${task.points ? `<span class="badge text-center" style="width: 25px; margin-right: 10px; background-color: ${task.title.startsWith('SUP-') ? '#F65835' : 'rgb(106, 112, 142)'}">${task.points}</span>` : ''}
+													${task.points ? `<span class="badge text-center" style="width: 25px; margin-right: 10px; background-color: ${task.title.startsWith('SUP-') ? '#F65835' : task.title.startsWith('BUG -') ? '#ff1616' : 'rgb(106, 112, 142)'}">${task.points}</span>` : ''}
 													${
 														task.link ? 
 														`<a target="blank_" href="${task.link}"><b>${task.title}</b></a>` :
