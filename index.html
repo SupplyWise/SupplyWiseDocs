@@ -446,8 +446,10 @@
 							`, 
 					issues: `Features related to stock management were not completed and will be prioritized in the next sprint. <br>
 							We also faced some coding style divergences between the team members, which will be addressed in the next sprint.`,
-					retrospective: `The team is generally satisfied with the sprint's achievements and the 15 story points developed.
-									We feel well-prepared to continue the development of critical functionalities in Sprint 3.`,
+					retrospective: `The team is generally satisfied with the sprint's achievements and the 15 story points developed.<br>
+									The successful implementation of franchise and restaurant creation, along with the introduction of automated testing and continuous code quality monitoring via SonarCloud, has strengthened the project's foundation.<br>
+									Additionally, improvements in security and authentication ensure a more reliable user experience.<br>
+									These advancements make us confident in continuing the development of critical functionalities in Sprint 3, including stock management and standardizing the team's coding practices.`,
 					tasks: [
 						{ title: "SUP-8 simple user login", points: 3, description: "Use the credentials to access the management platform.", link:"https://supplywise.atlassian.net/browse/SUP-8" },
 						{ title: "SUP-19 user change password", points: 1, description: "Allow users to change their password on account settings.", link:"https://supplywise.atlassian.net/browse/SUP-19" },
@@ -511,7 +513,9 @@
 							First, we implemented the ability to set minimum stock quantities for inventory items, that had been delayed from the previous sprints. <br>
 							We also worked on refactoring the items model to align different perspectives within the team. <br>
 							Finally, we took on the challenge of implementing IDP authentication - the first microservice in our architecture`,
-					issues: null,
+					issues: `Since the project initially implemented login with traditional credentials, migrating to Cognito required extensive modifications to existing structures and workflows.<br>
+							This complexity contributed to the high number of story points assigned to this task. <br>
+							Additionally, we had to develop a Lambda function to facilitate token exchange.`,
 					retrospective: `The refactoring of the items model turned out to be an important step. Each team member initially had a different perspective on how it should be structured, and this refactor helped us align our approach, making future development much smoother. <br>
 								When it comes to IDP authentication, it was our first microservice, and it took a considerable amount of time and effort. It was, without a doubt, the most challenging part of this sprint. However, now that we've gone through the toughest implementation, the foundation is set and building the remaining microservices should feel much more natural and efficient`,
 					tasks: [
