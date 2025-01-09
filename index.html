@@ -531,9 +531,15 @@
 						productOwner: "Alexandre Ribeiro",
 						scrumMaster: "Miguel Pinto",
 					},
-					summary: null,
-					issues: null,
-					retrospective: null,
+					summary: `In this sprint, we focused on user management and stock monitoring functionalities. <br> 
+							The objective was to implement the registration process for manager masters and allowed them to register other managers in the platform. <br> 
+							Additionally, we introduced a notification system to alert manager masters when stock levels reach the defined minimum threshold.`,
+					issues: `Building the notification system with WebSockets was challenging, especially in ensuring beacuse we faced issues where some notifications failed to reach users<br>
+							Debugging and resolving these delivery failures required extra effort to understand the root cause<br>
+							Besides that, dealing with relating the notifications with the current logger user restaurante(s) and its role was also a challenge
+							`,
+					retrospective: `The team is happy with the progress made in this sprint, as some crucial functionalities planned by the beginning of the project were finally implemented. <br>
+									This fact motivates us because we are one sprint away from the end of the project and with with some final adjustments on the next phase, we will be able to deliver a functional platform with the main ideas we had in mind.`, 
 					tasks: [
 						{ title: "SUP-9 Simple Manager_Master Registration", points: 3, description: "A franchise owner should be able to register a manager master in the platform", link: "https://supplywise.atlassian.net/browse/SUP-9" },
 						{ title: "SUP-10 Registration of other Managers by Manager_Master", points: 3, description: "A manager master should be able to register other managers in the platform", link: "https://supplywise.atlassian.net/browse/SUP-10" },
