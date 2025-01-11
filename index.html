@@ -553,13 +553,24 @@
 						productOwner: "Maria Sardinha",
 						scrumMaster: "Miguel Miragaia",
 					},
-					summary: null,
-					issues: null,
-					retrospective: null,
+					summary: `This sprint marked the end of the project's development phase, and we focused on finalizing the remaining functionalities and ensuring that we had a stable deployment. <br>
+							We implemented the inventory count notification system, allowing users to receive notifications when an inventory count is scheduled, and the ability to create and edit inventory count schedules for those who have the required permissions. <br>
+							We also finished the Data Migration micro-service, which is responsible for importing inventory items through a CSV file. <br>
+							Additionally, we made some final bug fixes and improvements to the application. <br>
+							Finally, we deployed the full application to AWS and created a demo video showcasing the platform's functionalities.`,
+					issues: `Unfortunally, the Reporting micro-service was not completed, although it is functional and tested locally, it was not deployed to the AWS environment. <br>
+							Overall, time was the main issue, as we had other exams that took priority over the project. <br>`,
+					retrospective: `The team is satisfied with the project's outcome, as we managed to deliver most of the planned functionalities and the platform is functional and ready for use. <br>
+									We are proud of the work we have done and the knowledge we have acquired throughout the project. <br>
+									If we had more time, we feel that we could have delivered even more functionalities and improvements to the platform, but we are happy with the result.`,
 					tasks: [
 						{ title: "SUP-16 Inventory Count Notification", points: 3, description: "A manager should receive a notification when an inventory count is scheduled", link: "https://supplywise.atlassian.net/browse/SUP-16" },
 						{ title: "SUP-11 Create an Inventory Count Schedule", points: 1, description: "A manager master should be able to schedule a periodicity or specific date for the inventory count", link: "https://supplywise.atlassian.net/browse/SUP-11" },
 						{ title: "SUP-12 Edit an Inventory Count Schedule", points: 1, description: "A manager master should be able to edit a previously set periodicity or specific date for the inventory count", link: "https://supplywise.atlassian.net/browse/SUP-12" },
+						{ title: "SUP-14 Upload Inventory Items via CSV", points: 3, description: "A manager master should be able to import inventory items to an open inventory through a CSV file", link: "https://supplywise.atlassian.net/browse/SUP-14" },
+						{ title: "SUP-34 AWS Deployment", points: 7, description: "Deploy the full application to AWS", link: "https://supplywise.atlassian.net/browse/SUP-34" },
+						{ title: "SUP-37 Create the demo video", points: 2, description: "Create a video demonstrating the app's functionalities", link: "https://supplywise.atlassian.net/browse/SUP-37" },
+						{ title: "BUG - Bug Cleaning & Improvements (Incomplete)", description: "Fix a series of bugs and make improvements to the aplication (divided into several subtasks)", link: "https://supplywise.atlassian.net/browse/SUP-78" },
 					]
 				},
 			];
